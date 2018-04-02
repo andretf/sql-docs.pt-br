@@ -48,7 +48,7 @@ As recomendações a seguir são parâmetros de configuração opcionais que voc
 
 - **Definir um limite de memória com conf mssql**
 
-   Para garantir que não há suficiente memória física livre para o sistema operacional Linux, o processo do SQL Server usa somente 80% da RAM física por padrão. Para alguns sistemas quais grande quantidade de RAM física, 20% pode ser um número significativo. Por exemplo, em um sistema com 1 TB de RAM, a configuração padrão deixaria cerca de 200 GB de RAM não utilizados. Nessa situação, você poderá configurar o limite de memória para um valor mais alto. Consulte a documentação sobre o **mssql conf** ferramenta e o [memory.memorylimitmb](sql-server-linux-configure-mssql-conf.md#memorylimit) definir que controla a memória visível para o SQL Server (em unidades de MB).
+   Para garantir que há memória física livre suficiente para o sistema operacional Linux, o processo do SQL Server usa somente 80% da RAM física por padrão. Para alguns sistemas com grande quantidade de RAM física, 20% pode ser um número significativo. Por exemplo, em um sistema com 1 TB de RAM, a configuração padrão deixaria cerca de 200 GB de RAM não utilizados. Nessa situação, você poderá configurar o limite de memória para um valor mais alto. Consulte a documentação sobre o **mssql conf** ferramenta e o [memory.memorylimitmb](sql-server-linux-configure-mssql-conf.md#memorylimit) definir que controla a memória visível para o SQL Server (em unidades de MB).
 
    Ao alterar essa configuração, tenha cuidado para não definir esse valor muito alto. Se você não deixar memória suficiente, você poderá experimentar problemas com o sistema operacional Linux e outros aplicativos do Linux.
 
